@@ -22,3 +22,6 @@ After researching effective techniques of sensor fusion, we found that the ideal
 For each of the sonars, the CPTs were modelled based on a single-variable Normal distribution for each distance away from each wall. The decision for using this distribution was due to the large number of samples collected from each distance coordinate away from the wall (about 700 each from each individual distance coordinates away from the center wall orientation, for example), allowing for the assumption that the Central Limit Theorem would hold. In effect, the probability of a given measurement, given the distance coordinate away from a given wall, is determined through putting it into the probability density function for each distance coordinate per wall orientation. The code for generating the CPTs, along with the CPTs (stored in CPTs.zip) can be found in our repository here: https://github.com/floridatechcse5694sp19/WallBayesianNetwork.
 
 Currently, the sensor fusion process to determine the distance coordinate from the wall can be found here: https://raw.githubusercontent.com/floridatechcse5694sp19/WallBayesianNetwork/master/sensor_fusion.py. 
+
+
+[1] Mitchell, H.B. *Multi-Sensor Data Fusion*, New York, NY: Springer, 2007.
