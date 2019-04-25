@@ -30,3 +30,20 @@ Pre-requisities to run this code is that the csvs from CPTs.zip are extracted in
 The probability map displays three plots, one for each orientation of the robot (left, straight, right), along with the conditional probabilities that the robot is in each square for that orientation given the sensor values. The sonar sensor fusion model is the main driver of these probabilities. Further work could be done into investigating the landmark data to provide more accurate localization when a landmark is detected. In our sampling process landmark detection was fairly unreliable, so another area of research could be into better landmark detection methods.
 
 [1] Mitchell, H.B. *Multi-Sensor Data Fusion*, New York, NY: Springer, 2007.
+
+
+### Project 2: Particle Filtering for Localization
+
+Source code used to generate transition probability data: https://github.com/floridatechcse5694sp19/WallBayesianNetwork/blob/master/csvwriter_movement.py
+
+Transition probability data: https://github.com/floridatechcse5694sp19/WallBayesianNetwork/blob/master/motion_cpt.csv
+
+Source code used to generate evidence probabilities:https://github.com/floridatechcse5694sp19/WallBayesianNetwork/blob/master/cpt_sonar_calculator_evidence.py 
+https://github.com/floridatechcse5694sp19/WallBayesianNetwork/blob/master/cpt_landmark_calculator_evidence.py
+
+Evidence probability data:
+https://github.com/floridatechcse5694sp19/WallBayesianNetwork/blob/master/sonar_cpt_evidence.csv
+https://github.com/floridatechcse5694sp19/WallBayesianNetwork/blob/master/landmark_cpt_evidence.csv
+
+Particle filtering code (relies on the csv data already having been generated and for the above source code files to reside in the same directory):
+https://github.com/floridatechcse5694sp19/WallBayesianNetwork/blob/master/project2_localization.py
